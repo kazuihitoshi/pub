@@ -63,3 +63,9 @@
    ))
 ;; 警告音の代わりに画面フラッシュ
 (setq visible-bell t)
+;;angy-ftp
+;;ftp://ftp.gnu.org/old-gnu/emacs/windows/contrib/ftp-for-win32.zip よりダウンロードしたftpを指定する。
+(setq ange-ftp-ftp-program-name "C:\\opt\\command\\ftp.exe")
+;;grep-find
+;;find をcygwin64を優先で呼ぶ
+(setenv "PATH" (format "c:\\cygwin64\\bin;%s" (getenv "PATH")))
